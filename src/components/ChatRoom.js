@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import io from 'socket.io-client';
 import Chat from './Chat';
-// import './myStyling.scss';
+import './chat.scss';
 
 const socket = io.connect('http://localhost:3001');
 
@@ -22,7 +22,7 @@ const ChatRoom = () => {
         <div>
            {!showRoom? 
            <div className='talkContainer'>
-            <h2>試作聊天室</h2>
+            <h2>socket.io Room</h2>
             <div className='btns'>
             <input type='text' placeholder='使用者名稱... 例:欸比' className='inputName'
                 onChange={(name) => { setUserName(name.target.value) }} />

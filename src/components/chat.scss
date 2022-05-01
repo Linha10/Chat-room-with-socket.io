@@ -1,0 +1,127 @@
+.talkContainer{
+    background-color: lightblue;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    border-radius: 3%;
+    h2{
+        padding-top: 20px;
+    }
+    .btns{
+        width: 60%;
+        display: flex;
+        margin: auto;
+        // background-color: antiquewhite;
+        flex-direction: column;
+    }
+    input{
+        height: 2em;
+        font-size: 14px;
+        margin-bottom: 1em;
+    }
+    .checkIn{
+        font-weight: 800;
+        background-color: rgb(53, 199, 53);
+        border: 0px;
+        width: 70%;
+        font-size: 18px;
+        margin: auto;
+        border-radius: 4%;
+        color: rgb(0, 0, 0);
+    }
+    .checkIn:hover{
+        background-color:rgba(1, 141, 227 , 0.7);
+        color: whitesmoke;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+.chatRoom{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    .chatWindow{
+        border: 2px solid;
+        height: 300px;
+        width: 200px;
+        background-color: rgba(203, 207, 203, 0.5);
+    }
+    button{
+        border:0px;
+        border-radius: 3%;
+        font-size: 15px;
+        font-weight: 800;
+        transition: 0.5s;
+        color: black;
+        background-color: rgb(171, 171, 255);
+    }
+    button:hover{
+        background-color:rgb(43, 184, 231);
+    }
+    .chat-header{
+        text-align: center;
+        font-weight: bold;
+        color:black; 
+        border-bottom: 1px solid;
+        height: 20px;
+        background-color: rgba(1, 141, 227 , 0.7);
+    }
+    .chat-body {
+        margin: 2px;
+        height: 225px;
+        border: 1px solid;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        word-break: break-all;
+    }
+    .chatTextArea{
+        margin: 2px;
+        height: 225px;
+    }
+    .userMessage{
+        height: 100%;
+        width: 55%;
+        font-size: 14px;
+        padding: auto;
+        color: rgba(240, 239, 239,0.9);
+        border-radius: 8%;
+        background-color: rgba(74, 74, 74,0.7);
+    }
+    #userData{
+        #author{
+            font-size: 10px;
+            margin-left: 3px;
+        }
+        #time{
+            font-size: 8px;
+            margin-left: 5px;
+        }
+    }
+    #you{
+        justify-content: flex-start;
+        // background-color: rgb(212, 129, 22);
+        .userMessage{
+            margin-left: 39%;
+            height: 100%;
+            width: 60%;
+            font-size: 14px;
+            padding: auto;
+            color: rgba(36, 35, 35, 0.9);
+            border-radius: 8%;
+            background-color: rgba(43, 181, 31, 0.7);
+        }
+        #userData{
+            margin-left: 60%;
+            #author{
+                font-size: 10px;
+                margin-left: 3px;
+            }
+            #time{
+                font-size: 8px;
+                margin-left: 5px;
+            }
+        }
+    }
+}

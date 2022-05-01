@@ -33,7 +33,7 @@ const Chat = ({ socket, userName, room }) => {
   // },[socket])
 
   return (
-    <div>
+    <div className="chatRoom">
       <div className="chatWindow">
         <div className="chat-header">
           <span>Live Chat</span>
@@ -47,9 +47,9 @@ const Chat = ({ socket, userName, room }) => {
                   className="message"
                   id={userName === item.author ? "you" : "other"}
                 >
-                  <div>
+                  <div id='oneMessage'>
                     <div className="userMessage">
-                      <p>{item.message}</p>
+                      {item.message}
                     </div>
                     <div id="userData">
                       <span id="author">{item.author}</span>-
@@ -74,7 +74,7 @@ const Chat = ({ socket, userName, room }) => {
               e.key === "Enter" && sendMessage();
             }}
           />
-          <button onClick={sendMessage}>送出</button>
+          <button className="sendMesg" onClick={sendMessage}>送出</button>
         </div>
       </div>
     </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Chat from "./components/Chat";
 import ChatRoom from "./components/ChatRoom";
 import reportWebVitals from "./reportWebVitals";
 
