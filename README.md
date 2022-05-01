@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 ## 學習使用Socket.io建立聊天室
-## CSS設定尚未完成
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
